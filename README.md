@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Makson19/project-track-intro-component-master)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://makson19.github.io/project-track-intro-component-master/)
 
 ## My process
 
