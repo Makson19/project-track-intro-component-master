@@ -1,0 +1,31 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    overflow-x: hidden;
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.background {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #eef3f6;
+    width: 48%;
+    height: 53%;
+    z-index: -1;
+    border-bottom-left-radius: 3.5rem;
+}

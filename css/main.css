@@ -1,0 +1,314 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.background {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eef3f6;
+  width: 48%;
+  height: 53%;
+  z-index: -1;
+  border-bottom-left-radius: 3.5rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 10%;
+  position: relative;
+}
+
+.header .logo {
+  width: 1.5rem;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .navbar {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  z-index: 1000;
+  width: 80%;
+  text-align: center;
+  -webkit-box-shadow: -2px 6px 15px rgba(90, 90, 90, 0.2);
+          box-shadow: -2px 6px 15px rgba(90, 90, 90, 0.2);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background-color: #fff;
+}
+
+.header .navbar .navbar__list {
+  list-style: none;
+}
+
+.header .navbar .navbar__list .navbar__item {
+  font: 700 1.1rem "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.header .navbar .navbar__list .navbar__item a {
+  color: #242942;
+}
+
+.header .navbar .navbar__list .navbar__item a:hover {
+  text-decoration: underline;
+}
+
+.header .navbar .navbar__list .navbar__item .divisor {
+  width: 100%;
+  height: 0.05rem;
+  background: #a0a1ac;
+}
+
+.header .navbar .navbar__list .navbar__item:last-child > a {
+  color: #5b5f71;
+}
+
+.header .menu {
+  width: 2rem;
+  height: 1.5rem;
+  background: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar.active {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.menu.active {
+  background: url("../images/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+.content .image-device {
+  position: relative;
+  max-width: 50rem;
+  max-height: 40rem;
+  padding: 1rem 5%;
+  overflow: hidden;
+}
+
+.content .image-device img {
+  width: 145%;
+  position: relative;
+  left: 0;
+  height: 100%;
+}
+
+.content .wrapp-text {
+  padding: 0 10%;
+  margin-top: 3rem;
+}
+
+.content .wrapp-text .text-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content .wrapp-text .text-1 .new {
+  background-color: #242942;
+  padding: 0.25rem 0.5rem 0.34rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.content .wrapp-text .text-1 .new > p {
+  font: 700 0.7rem "Barlow", sans-serif;
+  color: #eef3f6;
+}
+
+.content .wrapp-text .text-1 > p {
+  font: 400 0.8rem "Barlow", sans-serif;
+  text-transform: uppercase;
+  color: #a0a1ac;
+  letter-spacing: 0.15rem;
+}
+
+.content .wrapp-text .title {
+  font: 700 2.15rem "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #242942;
+  margin-bottom: 0.5rem;
+}
+
+.content .wrapp-text .text-2 {
+  font: 400 1rem "Barlow", sans-serif;
+  color: #242942;
+  max-width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.content .wrapp-text .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content .wrapp-text .buttons > a {
+  background: #ff5c5c;
+  color: #eef3f6;
+  text-transform: uppercase;
+  font: 700 0.8rem "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.3rem;
+}
+
+.content .wrapp-text .buttons > a:hover {
+  background: rgba(255, 92, 92, 0.75);
+}
+
+.content .wrapp-text .buttons > p {
+  font: 400 0.8rem "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #a0a1ac;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 48rem) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 10%;
+  }
+  .header .logo {
+    width: 2rem;
+  }
+  .header .navbar {
+    position: relative;
+    right: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    background: transparent;
+  }
+  .header .navbar .navbar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 2rem;
+    width: 100%;
+  }
+  .header .navbar .navbar__list .navbar__item {
+    margin: 0;
+  }
+  .header .navbar .navbar__list .navbar__item .divisor {
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #a0a1ac;
+    border-radius: 50%;
+  }
+  .header .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .header {
+    padding-top: 3.5rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 3rem;
+  }
+  .content .image-device {
+    padding: 0;
+    margin: 0;
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+  }
+  .content .image-device img {
+    width: 130%;
+    left: 6%;
+  }
+  .content .wrapp-text {
+    padding: 0 0 0 10%;
+    -webkit-box-flex: 0.8;
+        -ms-flex: 0.8;
+            flex: 0.8;
+  }
+  .content .wrapp-text .title {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 68.75rem) {
+  .content {
+    margin-top: 3.5rem;
+  }
+  .content .image-device img {
+    width: 120%;
+    left: 13%;
+  }
+  .content .wrapp-text .title {
+    font-size: 3.7rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
